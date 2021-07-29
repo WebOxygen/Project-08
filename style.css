@@ -1,0 +1,1704 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,600&display=swap');
+/*font-family: 'Playfair Display', serif;*/
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,600&display=swap');
+/*font-family: 'Playfair Display', serif;*/
+
+
+
+@font-face {
+    font-family: "Gotham";
+    src: url("assets/fonts/GothamPro-Medium.eot");
+    src: url("assets/fonts/GothamPro-Medium.eot?#iefix") format("embedded-opentype"), url("assets/fonts/GothamPro-Medium.woff2") format("woff2"), url("assets/fonts/GothamPro-Medium.woff?ver1.0") format("woff"), url("assets/fonts/GothamPro-Medium.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "GothamLight";
+    src: url("assets/fonts/GothamPro-Light.eot");
+    src: url("assets/fonts/GothamPro-Light.eot?#iefix") format("embedded-opentype"), url("assets/fonts/GothamPro-Light.woff2") format("woff2"), url("assets/fonts/GothamPro-Light.woff?ver1.0") format("woff"), url("assets/fonts/GothamPro-Light.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 600;
+}
+
+
+/*-------------- Defalts Css ------------------*/
+
+body {
+    font-family: 'GothamLight';
+    font-size: 16px;
+    line-height: 28px;
+    color: #292929;
+}
+
+a {
+    outline: none;
+    color: #613b6e;
+}
+
+button:active {
+    border: none !important;
+    outline: none !important;
+}
+
+button:focus {
+    outline: 0;
+}
+
+a,
+.logo,
+i,
+button,
+.quick-view,
+.shopping-bar span,
+.header-search-bar span,
+header,
+.addition-product .page-content-block,
+.addToCart-overlay,
+.addToCart-block,
+.procced-checkout,
+.cartOverlay {
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+.addToCart-overlay,
+.addToCart-block,
+.procced-checkout,
+.cartOverlay {
+    -webkit-transition: all 0.5s;
+    transition: all 0.6s;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1 {
+    font-size: 70px;
+    font-family: 'Gotham';
+    color: #613b6e;
+}
+
+h2 {
+    font-size: 46px;
+    font-family: 'Gotham';
+    line-height: 55px;
+    color: #613b6e;
+    margin: 0 0 16px;
+}
+
+h3 {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    font-family: "Gotham";
+    color: #613b6e;
+}
+
+h4 {
+    font-size: 24px;
+    font-family: 'Gotham';
+    color: #613b6e;
+}
+
+h5 {
+    font-size: 24px;
+    font-family: "Gotham";
+    color: #613b6e;
+}
+
+h6 {
+    font-size: 16px;
+    font-family: "Gotham";
+    color: #613b6e;
+}
+
+/*-------------- important Css ------------------*/
+
+.pr50 {
+    padding-right: 50px;
+}
+
+.pl50 {
+    padding-left: 50px;
+}
+
+.mtb-auto {
+    margin-bottom: auto;
+    margin-top: auto;
+}
+
+.space40 {
+    height: 40px;
+}
+
+.space30 {
+    height: 30px;
+}
+
+.space20 {
+    height: 20px;
+}
+
+.space60 {
+    height: 60px;
+}
+
+.separetor {
+    height: 1px;
+    background-color: #F2F2F2;
+    margin: 15px 0px;
+}
+
+/*-------------- Background Css ------------------*/
+
+
+
+/*-------------- Scroll Top Css ------------------*/
+
+.scrollup {
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    bottom: 60px;
+    right: 50px;
+    display: none;
+    color: #fff;
+    z-index: 3;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 100%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.scrollup:hover {
+    background-color: rgba(244, 118, 37, 0.9);
+    color: #fff;
+}
+
+/*-------------- Header Main Css ------------------*/
+
+.header-height {
+    height: 118px;
+}
+
+header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 10;
+    border-bottom: 1px solid #dfdfdf;
+    background-color: #fff;
+}
+
+header:before {
+    content: "";
+    display: block;
+    top: 0;
+    height: 100%;
+    transform: translateY(-144px);
+    left: 0;
+    width: 100%;
+    position: absolute;
+    background-color: #fff;
+    opacity: 0;
+    transition: transform .4s, opacity .4s;
+}
+
+header:after,
+header .container:after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+.header-area {
+    position: relative;
+    display: flex;
+    width: 100%;
+    padding: 15px 0px;
+}
+
+.header-logo {}
+
+.logo {
+    margin: auto;
+}
+
+.header-top {
+    background: #109065;
+    background: -moz-linear-gradient(left, #109065 0%, #0bd18d 100%);
+    background: -webkit-linear-gradient(left, #109065 0%, #0bd18d 100%);
+    background: linear-gradient(to right, #109065 0%, #0bd18d 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#109065', endColorstr='#0bd18d', GradientType=1);
+    text-align: center;
+    position: relative;
+    padding: 5px 0;
+}
+
+.header-top p {
+    font-size: 14px;
+    color: #fff;
+    margin: 0;
+    font-family: "Gotham";
+}
+
+.ht-close {
+	display: inline-block;
+	position: absolute;
+	right: 20px;
+	top: 50%;
+    margin-top: -18px;
+	height: 18px;
+	width: 18px;
+}
+.header-right {
+    text-align: right;
+}
+.section-title {
+    text-align: center;
+    margin: 0 0 50px;
+}
+.section-title p {
+    color: #613b6e;
+}
+
+
+
+/*-------------- Main Menu Css ------------------*/
+
+.mainmenu {}
+
+.mainmenu ul {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+
+.mainmenu ul li {
+    display: inline-block;
+    position: relative;
+}
+
+.mainmenu ul li a {
+    display: block;
+    color: #613b6e;
+    font-weight: 500;
+    font-size: 15px;
+    padding: 10px 15px;
+    font-family: "Gotham";
+}
+
+.mainmenu ul li:last-child a {
+    border-bottom: 0px;
+}
+
+.mainmenu > ul > li:hover > a {
+    text-decoration: none;
+    color: #579540;
+}
+
+.mainmenu ul li ul {
+    position: absolute;
+    left: 0px;
+    top: 112px;
+    background-color: #fff;
+    width: 240px;
+    text-align: left;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    visibility: hidden;
+    z-index: -1;
+    box-shadow: 1px 2px 3px 0px rgba(0, 0, 0, 0.2);
+}
+
+.mainmenu ul li ul li {
+    display: block;
+}
+
+.mainmenu ul li ul li a {
+    font-size: 14px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.mainmenu ul li ul > li:hover > a,
+.mainmenu ul li ul li ul > li:hover > a {
+    background-color: #579540;
+    text-decoration: none;
+    color: #fff;
+}
+
+.mainmenu ul li:hover > ul,
+.mainmenu ul li ul li:hover > ul {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=1)";
+    z-index: 11;
+    visibility: visible;
+    top: 100%;
+}
+
+.mainmenu ul li ul li > ul {
+    left: 100%;
+    top: 80px;
+}
+
+.mainmenu ul li ul li:hover > ul {
+    top: 0px;
+}
+
+.mainmenu ul li:last-child ul li > ul,
+.mainmenu ul li:nth-last-child(2) ul li > ul {
+    left: -100%;
+}
+
+.mainmenu ul li.nav-active > a {
+    font-family: "Gotham";
+    text-decoration: none;
+    color: #579540;
+}
+
+.mainmenu ul li.nav-active > ul li.chaild-active a {
+    background-color: #579540;
+    color: #fff;
+}
+
+.mobile-menu-wrapper {
+    display: none;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    margin: auto 0px;
+}
+
+.menu-check {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    z-index: 7;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.menu-icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.menu-icon > div {
+    position: absolute;
+    width: 60%;
+    height: 2px;
+    background-color: #5a9542;
+    transition: .4s;
+    z-index: 6;
+}
+
+.menu-icon > div:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #5a9542;
+    top: -8px;
+    left: 0;
+    transition: .4s;
+}
+
+.menu-icon > div:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #5a9542;
+    top: 8px;
+    left: 0;
+    transition: .4s;
+}
+
+.menu-check:checked + .menu-icon > div {
+    transform: rotate(135deg);
+    background-color: #ffb127;
+    width: 100%;
+    height: 3px;
+}
+
+.menu-check:checked:hover + .menu-icon > div {
+    transform: rotate(225deg);
+    background-color: #ffb127;
+    width: 100%;
+    height: 3px;
+}
+
+.menu-check:checked + .menu-icon > div:before,
+.menu-check:checked + .menu-icon > div:after {
+    top: 0;
+    transform: rotate(90deg);
+    background-color: #ffb127;
+    width: 100%;
+    height: 3px;
+}
+
+.menu-check:checked {
+    position: fixed;
+    top: inherit;
+    right: auto;
+}
+
+.menu-check:checked + .menu-icon {
+    position: fixed;
+    z-index: 6;
+}
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    transition: .6s;
+    z-index: 3;
+}
+.menu > div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-150%) translateY(-50%);
+    width: 101%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.99);
+    display: flex;
+    transition: .6s;
+}
+.nav-mobile {
+    overflow-y: auto;
+}
+.menu > div > div {
+    width: 100%;
+    padding: 60px 30px 30px;
+    opacity: 0;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    color: #DFDFDF;
+}
+.menu ul {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+.menu ul li {
+    list-style: none;
+}
+.menu ul li a {
+    text-decoration: none;
+    color: #222;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-top: 10px;
+    transition: .3s;
+    font-size: 18px;
+    display: inline-block;
+}
+
+.menu > div > div > ul > li > a:hover {
+    color: #f25094;
+}
+
+.menu-check:checked ~ .menu {
+    visibility: visible;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+.menu-check:checked ~ .menu > div {
+    transform: translateX(-50%) translateY(-50%);
+}
+.menu-check:checked ~ .menu > div > div {
+    opacity: 1;
+}
+.nav-mobile .logo {
+    margin-bottom: 20px;
+}
+
+/*================= Page Content ====================*/
+
+
+.page-content-block {
+    padding: 80px 0px;
+}
+
+.main-btn {
+    color: #fff;
+    border-radius: 40px;
+    display: inline-block;
+    padding: 17px 65px;
+    font-size: 14px;
+    margin-top: 22px;
+    font-family: "Gotham";
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+    border: 0px;
+    background: #109065;
+    background: -moz-linear-gradient(left, #109065 0%, #0bd18d 100%);
+    background: -webkit-linear-gradient(left, #109065 0%, #0bd18d 100%);
+    background: linear-gradient(to right, #109065 0%, #0bd18d 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#109065', endColorstr='#0bd18d', GradientType=1);
+    z-index: 1;
+    position: relative;
+    overflow: hidden;
+}
+.main-btn:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #774787; /* Old browsers */
+    background: -moz-linear-gradient(left, #774787 0%, #613b6e 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #774787 0%,#613b6e 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #774787 0%,#613b6e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#774787', endColorstr='#613b6e',GradientType=1 ); /* IE6-9 */
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.main-btn:hover {
+  color: #fff;
+  text-decoration: none;
+}
+.main-btn:hover:before{
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+
+h2 span,
+h3 span {
+    color: #0bd18e;
+}
+
+
+
+
+/*=============== Banner Area Css =============*/
+
+.banner-area {
+    padding: 110px 0 300px;
+    position: relative;
+}
+
+.banner-txt h1 {
+    color: #613b6e;
+    line-height: 80px;
+    margin: 0 0 25px;
+}
+
+.banner-txt p {
+    color: #292929;
+    line-height: 35px;
+}
+
+.banner-img {
+    background-image: url(assets/images/banner-img.jpg);
+    height: 100%;
+    max-width: 648px;
+    width: 100%;
+    background-repeat: no-repeat;
+    right: 0;
+    top: 53px;
+    position: absolute;
+    background-size: cover;
+}
+.banner-bottom-img {
+    background-image: url(assets/images/banner-bottom-bg.jpg);
+    background-position: left center;
+    text-align: center;
+    padding: 55px;
+    margin-top: -177px;
+}
+.banner-bottom-area {
+    padding-top: 0px;
+}
+
+.banner-badge-area {
+	display: flex;
+	margin: auto 0px auto auto;
+	justify-content: flex-end;
+}
+.banner-badge-item {
+	max-width: 150px;
+}
+.banner-badge-item:last-child {
+    margin-left: 38px;
+}
+
+.banner-area .main-btn {
+    padding: 15px 45px;
+}
+
+
+
+/*=============== Fuller  Css =============*/
+
+.fuller-area {
+    padding-bottom: 170px;
+    position: relative;
+}
+
+.sction-title span {
+    color: #0bd18e;
+}
+.fuller-area .sction-title {
+    text-align: center;
+}
+.fuller-area .sction-title h2{
+    font-size: 38px;
+    text-align: left;
+}
+
+.fuller-txt {
+    margin-top: 165px;
+}
+
+.fuller-txt h3 {
+    margin: 0 0 30px;
+}
+
+.fuller-items {
+    position: relative;
+}
+
+.fuller-item {
+    text-align: center;
+    display: inline-block;
+    position: absolute;
+}
+
+.fuller-item.item1 {
+    top: 40px;
+    left: 218px;
+}
+
+.fuller-item.item2 {
+    top: 202px;
+    left: 47px;
+}
+
+.fuller-item.item3 {
+    top: 265px;
+    left: 316px;
+}
+
+.fuller-item span {
+    height: 136px;
+    width: 136px;
+    background-color: #613b6e;
+    display: inline-block;
+    text-align: center;
+    line-height: 136px;
+    border-radius: 50%;
+    position: relative;
+    margin: 0 0 22px;
+}
+
+.fuller-item span:before {
+    position: absolute;
+    content: '';
+    height: 136px;
+    width: 136px;
+    border: 2px solid #0ea974;
+    border-radius: 50%;
+    left: 10px;
+    z-index: 1;
+    top: 10px;
+}
+
+.fuller-item h6 {
+    text-transform: uppercase;
+}
+
+.fuller-img-area {
+    background-image: url(assets/images/fuller-bg.jpg);
+    height: 70%;
+    max-width: 720px;
+    width: 100%;
+    background-repeat: no-repeat;
+    right: 0;
+    top: 20%;
+    position: absolute;
+}
+
+
+/*=============== Introducing Top Css =============*/
+
+.intro-top-area {
+    background-color: #613b6e;
+    padding: 77px 0;
+    position: relative;
+}
+
+.intro-top-area::before {
+    background-color: rgba(204, 193, 208, .25);
+    bottom: 84px;
+    position: absolute;
+    content: '';
+    left: 0;
+    height: 1px;
+    width: 100%;
+}
+
+.intro-top-items {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    color: #fff;
+}
+
+.intro-top-item {
+    position: relative;
+    width: 21%;
+    padding-bottom: 77px;
+}
+
+.intro-top-item::before {
+    content: '';
+    position: absolute;
+    height: 62px;
+    width: 15px;
+    background-image: url(assets/images/in-top-item-before.png);
+    bottom: 0;
+    left: 50%;
+    margin-left: -7.5px;
+}
+
+.intro-top-item img {
+    margin-bottom: 22px;
+}
+
+.intro-top-item h4 {
+    color: #fff;
+    font-size: 22px;
+}
+
+
+
+/*=============== Introducing main Css =============*/
+
+
+.intro-area {
+    padding: 218px 0 180px;
+}
+
+.intro-badge-img {
+	top: -175px;
+	left: -53px;
+	position: absolute;
+	max-width: 170px;
+}
+
+.intro-img-area {
+    text-align: center;
+    position: relative;
+}
+
+.intro-img-area:before {
+    height: 610px;
+    width: 258px;
+    background-color: #f5f5f5;
+    left: 0;
+    top: -100px;
+    content: '';
+    position: absolute;
+}
+
+.intro-img-area::after {
+    height: 339px;
+    width: 55px;
+    border-left: 1px solid rgba(174, 154, 181, .98);
+    border-bottom: 1px solid rgba(174, 154, 181, .98);
+    left: -81px;
+    top: -294px;
+    content: '';
+    position: absolute;
+}
+
+.intro-img-area img {
+    position: relative;
+}
+
+.intro-txt-area h2 {
+    margin-bottom: 20px;
+}
+
+
+
+/*=============== full thick Css =============*/
+
+.full-thick-area {
+    position: relative;
+    overflow: hidden;
+}
+.full-thick-area .container {
+    position: relative;
+}
+.full-thick-area:before {
+    height: 100%;
+    width: 50%;
+    left: 0;
+    top: 0;
+    content: '';
+    position: absolute;
+    background-color: #e4e4e4;
+    z-index: -1;
+}
+.full-thick-area:after {
+    background-image: url(assets/images/full-think-bg.png);
+    background-position: left center;
+    background-repeat: no-repeat;
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 400px;
+    opacity: 0.3;
+    left: 5%;
+    top: 0px;
+}
+.full-thick-details {
+    height: 550px;
+    background-color: #e4e4e4;
+    max-width: 90%;
+    position: relative;
+    overflow: hidden;
+    background-image: url("assets/images/full-think-head.jpg");
+    background-position: right center;
+    background-repeat: no-repeat;
+}
+.full-thick-area h2 {
+    white-space: nowrap;
+    left: 185px;
+    bottom: 150px;
+    font-size: 54px;
+    position: absolute;
+    margin: 0px;
+}
+.full-thick-details h2 {
+    color: #fff;
+    z-index: 1;
+}
+.full-thick-area h2.back-title {
+    padding-left: 18px;
+}
+
+
+/*=============== Good Knews Css =============*/
+
+.good-news-area {
+	padding: 107px 0 340px;
+	background-image: url(assets/images/good-news-left.png);
+	background-position: left top;
+	background-repeat: no-repeat;
+}
+
+.good-news-details h2 {
+    margin: 0 0 16px;
+}
+
+
+
+/*=============== Enter Sha Css =============*/
+
+.enter-sha-area {
+    background-position: left top;
+    background-repeat: no-repeat;
+    position: relative;
+    padding: 146px 0 120px;
+    margin-top: -219px;
+}
+
+.enter-sha-area:before {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 70%;
+    height: 100%;
+    background-color: #613b6e;
+
+}
+
+.enter-sha-slider {
+    background-color: #f6f6f8;
+    padding: 40px 0 30px;
+    position: relative;
+}
+
+.enter-sha-slider:before {
+    content: '';
+    position: absolute;
+    left: -2999px;
+    top: 0;
+    width: 3000px;
+    height: 100%;
+    background-color: #f6f6f8;
+
+}
+
+.enter-sha-item-img {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 0 42px;
+}
+
+.enter-sha-item-img span {
+    height: 90px;
+    width: 90px;
+    margin-right: 22px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.enter-sha-item {
+    margin-left: 15px;
+}
+
+.enter-sha-item h5 {
+    font-size: 18px;
+}
+
+.star-block i {
+    color: #ffba00;
+    margin-right: 2px;
+}
+
+.age-btn {
+    background-image: url(assets/images/enter-sha-age-bg.png);
+    height: 66px;
+    width: 217px;
+    background-size: 100%;
+    background-position: center;
+    display: inline-block;
+    font-family: "Gotham";
+    line-height: 72px;
+    text-align: center;
+    margin-left: -15px;
+}
+
+.enter-sha-details,
+.enter-sha-details h2 {
+    color: #fff;
+}
+
+.enter-sha-details h2 {
+    margin: 0 0 20px;
+}
+
+.enter-sha-bottom-img {
+    position: absolute;
+    right: 0;
+    bottom: -50px;
+    max-width: 200px;
+}
+
+
+
+/*=============== Enter Sha Css =============*/
+
+.backed-area {
+    overflow: hidden;
+    padding: 150px 0;
+    background-image: url(assets/images/backed-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center bottom;
+}
+
+.backed-slider-item {
+    text-align: center;
+    background-color: #fdf6ff;
+    padding: 35px;
+    position: relative;
+    margin: 15px 55px 0 15px;
+}
+
+.backed-slider-item:before {
+    content: '';
+    position: absolute;
+    left: -13px;
+    top: -13px;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #cbb2d3;
+}
+
+.backed-slider-item span {
+    height: 105px;
+    width: 105px;
+    padding: 5px;
+    border: 1px solid #613b6e;
+    display: inline-block;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.backed-slider-item span img {
+    width: 100%;
+    height: auto;
+}
+.backed-slider-item p{
+    font-size: 14px;
+    line-height: 24px;
+}
+.backed-slider-item h5{
+    font-size: 22px;
+}
+.backed-slider {
+    margin-right: -400px;
+}
+
+.backed-slider .slick-dots,
+.rated-items .slick-dots {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    margin-left: 192px;
+    margin-top: 26px;
+}
+
+.backed-slider .slick-dots li,
+.rated-items .slick-dots li {
+    list-style: none;
+}
+
+.backed-slider button,
+.rated-items button {
+    position: relative;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    overflow: hidden;
+    padding: 0;
+    margin-right: 5px;
+    border: 1px solid #613b6e;
+    display: inline-block;
+}
+
+.rated-items .slick-dots li.slick-active button,
+.backed-slider .slick-dots li.slick-active button {
+    background: #613b6e;
+    border: none;
+}
+
+
+/*=============== Rated Area Css =============*/
+
+.rated-area {
+    background-color: #f6f6f8;
+    padding: 100px 0 150px;
+}
+
+.rated-details {
+    padding: 0 50px;
+}
+.rated-single-item strong{
+    color: #3e5e9d;
+}
+.rated-single-item {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 0 10px 20px;
+    background-color: #fff;
+    min-height:180px;
+    font-size: 12px;
+}
+
+.rated-top-txt {
+  padding-bottom: 5px;
+  border-bottom: 1px solid #ccc;
+}
+.rated-details-txt {
+	padding: 15px 0 10px;
+	display: flex;
+}
+.rated-top-txt p {
+  margin: 0;
+}
+
+.rated-details-img {
+  width: 100%;
+  max-width: 50px;
+  margin-right: 5px;
+}
+.rated-txt p {
+  line-height: 18px;
+  font-size: 14px;
+  margin: 0 0 4px;
+}
+.rated-txt ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.rated-txt i{
+    color: #2f9bfd;
+}
+.rated-txt ul li {
+  list-style: none;
+  margin-right: 9px;
+  font-size: 12px;
+}
+.rated-items .slick-dots {
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    margin: 0;
+    bottom: -65px;
+}
+strong {
+    font-family: "Gotham";
+}
+/*=============== Rated Area Css =============*/
+
+.fight-the-area {
+    background-image: url(assets/images/fight-the.png);
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-color: #767779;
+}
+.fight-the-txt h2 {
+    color: #fff;
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+.fight-the-txt p {
+    margin-bottom: 0px;
+    font-family: "Gotham";
+}
+.fight-the-details {
+    display: flex;
+    color: #fff;
+}
+.fight-the-txt {
+    margin-right: 50px;
+}
+.fight-the-area {
+    padding: 80px 0;
+}
+
+.ready-for-txt {
+    text-align: center;
+}
+
+
+
+/*=============== Development Css =============*/
+
+.dev-spec-area {
+    background-image: url(assets/images/backed-bg.jpg);
+    background-position: bottom center;
+    padding: 120px 0 150px;
+    background-repeat: no-repeat;
+}
+
+.dev-spec-details {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.dev-spec-details::before {
+    height: 1px;
+    width: 100%;
+    background-color: #ebebeb;
+    left: 0;
+    top: 51%;
+    content: '';
+    position: absolute;
+}
+
+.dev-spec-single-item {
+    display: flex;
+    min-height: 284px;
+}
+
+.dev-spec-item.left .dev-spec-single-item {
+    flex-direction: row-reverse;
+}
+
+.dev-spec-details {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.dev-spec-item {
+    width: 35%;
+}
+.dev-spec-item.middle {
+    text-align: center;
+    width: 25%;
+    position: relative;
+    margin: auto;
+}
+.dev-spec-img {
+    width: 100%;
+    max-width: 70px;
+}
+
+.dev-spec-img {
+    margin: 0 30px 0 0;
+}
+
+.dev-spec-item.left .dev-spec-img {
+    margin: 0 0 0 30px;
+}
+
+.dev-spec-txt {
+    width: 100%;
+}
+
+.dev-spec-item.left {
+    text-align: right;
+    position: relative;
+}
+
+.dev-spec-item.right {
+    position: relative;
+}
+
+.dev-spec-middle-img {
+    position: relative;
+}
+
+.dev-spec-item.left::before,
+.dev-spec-item.right::before {
+    height: 100%;
+    width: 1px;
+    background-color: #ebebeb;
+    right: 35px;
+    top: 0;
+    content: '';
+    position: absolute;
+}
+
+.dev-spec-item.right::before {
+    left: 35px;
+    right: inherit;
+}
+
+.dev-spec-badge {
+    position: absolute;
+    left: 65px;
+    top: -27px;
+    max-width: 105px;
+}
+
+.dev-spec-item .dev-spec-single-item:last-child {
+    align-items: flex-end;
+}
+
+.dev-spec-img span {
+    box-shadow: 5px 21px 40px 0 #0c0c0c;
+    position: relative;
+}
+
+.dev-spec-txt h5 {
+    margin: 30px 0 12px;
+}
+
+.dev-spec-txt p {
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.dev-spec-btn {
+    text-align: center;
+    margin: 20px 0 0;
+}
+
+
+
+/*=============== Stop Hair Css =============*/
+
+
+.stop-hair-area {
+    background-color: #f6f6f8;
+    padding: 120px 0;
+}
+
+.stop-hair-area .container {
+    position: relative;
+}
+
+.stop-hair-img {
+    display: inline-block;
+    position: relative;
+    max-width: 300px;
+}
+
+.stop-hair-badge {
+    position: absolute;
+    max-width: 150px;
+    right: -5px;
+    top: -46px;
+}
+
+.stop-hair-items {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.top-hair-item {
+    width: 52%;
+}
+
+.top-hair-item:first-child {
+    width: 42%;
+}
+
+.top-hair-single-item {
+    display: flex;
+    margin: 0 0 17px;
+}
+
+.top-hair-single-item span {
+    width: 100%;
+    max-width: 30px;
+    color: #0bd18e;
+    font-size: 40px;
+    font-family: "Gotham";
+    margin-right: 10px;
+    margin-top: 16px;
+}
+
+.top-hair-single-txt {
+    width: 100%;
+    padding: 20px;
+    border: 2px solid #baabc1;
+    position: relative;
+}
+
+.top-hair-single-txt::before {
+    height: 16px;
+    width: 16px;
+    background-color: #baabc1;
+    left: -9px;
+    top: 30px;
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    border: 4px solid #f6f6f8;
+}
+
+.top-hair-single-txt p {
+    margin: 0;
+}
+.stop-hair-img-area {
+    position: absolute;
+    right: -100px;
+    bottom: -200px;
+    padding-top: 50px;
+    overflow: hidden;
+}
+
+
+
+/*=============== Dermatologically Css =============*/
+
+.dermatolog-area {
+    padding: 150px 0 100px;
+}
+
+.dermatolog-item span {
+    height: 136px;
+    width: 136px;
+    display: inline-block;
+    text-align: center;
+    line-height: 136px;
+    border-radius: 50%;
+    position: relative;
+    margin: 0 0 22px;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#9b5eaf+0,653e73+100 */
+    background: #9b5eaf;
+    /* Old browsers */
+    background: -moz-radial-gradient(center, ellipse cover, #9b5eaf 0%, #653e73 100%);
+    /* FF3.6-15 */
+    background: -webkit-radial-gradient(center, ellipse cover, #9b5eaf 0%, #653e73 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: radial-gradient(ellipse at center, #9b5eaf 0%, #653e73 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#9b5eaf', endColorstr='#653e73', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+}
+
+.dermatolog-item span::before {
+    position: absolute;
+    content: '';
+    height: 136px;
+    width: 136px;
+    border: 2px solid #0ea974;
+    border-radius: 50%;
+    left: 10px;
+    z-index: 1;
+    top: 10px;
+}
+
+.dermatolog-details {
+    display: flex;
+    justify-content: center;
+}
+
+.dermatolog-item {
+    display: flex;
+    justify-content: ;
+    background-color: #fdf6ff;
+    padding: 30px;
+}
+
+.dermatolog-img {
+    margin-right: 30px;
+}
+
+.dermatolog-txt h5 {
+    font-size: 18px;
+}
+
+.dermatolog-item:first-child {
+    margin: 0 50px 0 0;
+}
+
+
+
+/*=============== Money Back Css =============*/
+
+.money-back-area {
+    background-image: url(assets/images/money-back.png);
+    background-position: left center;
+    background-color: #aeadac;
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: auto 100%;
+    padding: 55px 0;
+}
+
+.money-back-area:before {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    background: rgba(85,14,110,.6);
+    background: -moz-linear-gradient(left,  rgba(85,14,110,.6) 0%, rgba(85,14,110,.6) 43%, rgba(11,208,142,.6) 100%);
+    background: -webkit-linear-gradient(left,  rgba(85,14,110,.6) 0%,rgba(85,14,110,.6) 43%,rgba(11,208,142,.6) 100%);
+    background: linear-gradient(to right,  rgba(85,14,110,.6) 0%,rgba(85,14,110,.6) 43%,rgba(11,208,142,.6) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#550e6e', endColorstr='#0bd08e',GradientType=1 );
+
+}
+
+.money-back-details {
+    display: flex;
+}
+
+.money-back-txt {
+    color: #fff;
+    text-align: center;
+    margin: 0 16px 0 0;
+    width: 100%;
+}
+
+.money-back-txt h2 {
+    color: #fff;
+}
+
+.money-back-badge {
+    width: 100%;
+    max-width: 150px;
+}
+
+
+
+/*=============== Ready for Css =============*/
+
+.ready-for-area {
+    background-image: url(assets/images/ready-for.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: cover;
+}
+
+.ready-for-img {
+    padding: 142px 0 120px 75px;
+    position: relative;
+}
+
+.ready-for-img img {
+    position: relative;
+}
+
+.ready-for-img::before {
+    height: 100%;
+    width: 289px;
+    background-color: #f5f5f5;
+    left: 0;
+    top: 0;
+    content: '';
+    position: absolute;
+}
+.ready-for-txt-area {
+    color: #613b6e;
+    text-align: center;
+}
+
+
+
+/*=============== Page Top Footer Css =============*/
+
+.footer-top-area {
+    background-color: #613b6e;
+    padding: 49px 0 35px;
+    color: #caa7d6;
+}
+
+.footer-top-details {
+    padding: 0 80px;
+}
+
+.footer-top-menu {
+    border-bottom: 1px solid #caa7d6;
+}
+
+.footer-top-menu ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0px;
+    padding: 0px;
+}
+
+.footer-top-menu ul li {
+    list-style: none;
+    padding: 0 10px;
+    position: relative;
+    border-right: 1px solid #caa7d6;
+    line-height: 15px;
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+.footer-top-menu ul li:last-child {
+    border-right: none;
+}
+
+.footer-top-menu ul li a {
+    color: #caa7d6;
+}
+
+.footer-top-txt {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.footer-top-txt p {
+    font-size: 15px;
+    line-height: 22px;
+}
+
+
+
+/*=============== Page Footer Css =============*/
+
+.site-footer {
+    clear: both;
+    padding: 40px 0 37px;
+}
+
+.footer-left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.footer-left p {
+    margin: 0;
+}
+
+.footer-left a {
+    margin-right: 22px;
+}
+
+.footer-right {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.footer-menu ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-menu ul li {
+    list-style: none;
+}
+
+.footer-menu ul li a {
+    font-size: 15px;
+    padding: 0 6px;
+    line-height: 15px;
+    border-right: 1px solid #7d6286;
+}
+
+.footer-menu ul li a:hover,
+.footer-social a:hover {
+    text-decoration: none;
+}
+
+.footer-menu ul li:last-child a {
+    list-style: none;
+    border-right: none;
+}
+
+.footer-social a {
+    border: 2px solid #cbb2d3;
+    margin-left: 15px;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    display: inline-block;
+    text-align: center;
+}
+.footer-social a:hover {
+    background-color: #7d6286;
+    border: 2px solid #7d6286;
+    color: #fff;
+}

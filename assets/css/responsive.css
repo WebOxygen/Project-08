@@ -1,0 +1,204 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+/* Medium Layout: 1280px. */
+
+@media only screen and (min-width: 1200px) and (max-width: 10000px) {
+.container {
+	max-width: 1260px;
+}
+}
+
+@media only screen and (min-width: 992px) and (max-width: 10000px) {
+header.sticky {
+	box-shadow: 0px 1px 3px 0px rgba(193,193,193,1.00);
+}
+header.transparent-header.sticky:before {
+	opacity:0.9;
+	transform: translateY(0);
+}
+header.transparent-header.sticky {
+	box-shadow: none;
+}    
+}
+
+@media (min-width:992px) and (max-width: 1200px) {
+    .banner-txt h1{font-size: 54px;}
+    .banner-img{max-width: 50%;}
+    .fuller-img-area{background-position: right -240px bottom;background-size: cover;width: 50%;}
+    .intro-img-area:after{left: -64px;}
+}
+
+/* Tablet Layout: 991px. */
+@media (min-width:100px) and (max-width: 991px) {
+    .mobile-menu-wrapper {display: block;}
+    .mainmenu {display: none;}
+    .header-area{padding: 8px 0px;}
+    .logo{margin: auto auto auto 0px;}
+    .header-logo{max-width: 180px;}
+    .header-height{height: 96px;}
+    .banner-area, .page-content-block{padding: 60px 0px;}
+    .banner-img{height: 400px;position: static;margin-bottom: 30px;}
+    .banner-txt h1{font-size: 54px;line-height: 64px;}
+    .banner-txt h1 br{display: none;}
+    .banner-bottom-img{margin-top: 0px;}
+    .banner-badge-area{margin: 30px auto 0px;}
+    .banner-bottom-area{padding-bottom: 60px;}
+    .fuller-img-area{position: static;height: 600px;margin-top: 20px;}
+    .fuller-txt{margin-top: 30px;}
+    .intro-img-area{margin-left: 153px;}
+    .intro-area{padding-bottom: 60px;}
+    .full-thick-details{height: 340px;background-position: right -100px center;background-size: auto 100%;}
+    .full-thick-area::after{background-size: 180px;}
+    .full-thick-area h2{bottom: 80px;left: 40px;font-size: 39px;}
+    .good-news-area{background-position: left -280px top;padding: 80px 0;}
+    .enter-sha-area{margin-top: 0px;padding: 80px 0px;}
+    .enter-sha-area::before{width: 88%;}
+    .enter-sha-details{padding: 30px 100px 0px 30px;}
+    .backed-area, .stop-hair-area{padding: 80px 0px;}
+    .backed-details{padding-bottom: 30px;}
+    .rated-area{padding: 80px 0px 100px;}
+    .fight-the-details{flex-wrap: wrap;}
+    .dev-spec-area{padding: 80px 0px 120px;}
+    .rated-details{padding: 0px;}
+    .dev-spec-item{width: 100%;}
+    .dev-spec-item.middle{width: 35%;margin: 40px auto;}
+    .dev-spec-single-item{min-height: 100px;padding-bottom: 40px;}
+    .dev-spec-single-item:last-child{padding-bottom: 0px;}
+    .dev-spec-txt h5{margin: 0px 0 10px;}
+    .stop-hair-area{position: relative;}
+    .stop-hair-area .container{position: static;}
+    .stop-hair-img-area{bottom: -100px;right: 0px;}
+    .top-hair-item{width: 70%;}
+    .top-hair-item:first-child{width: 100%;}
+    .dermatolog-details{justify-content: space-between;}
+    .dermatolog-item{margin:0 !important;width: 48%;}
+    .dermatolog-item{flex-direction: column;}
+    .dermatolog-item span{width: 100px;height: 100px;line-height: 100px;}
+    .dermatolog-item span:before{width: 100px;height: 100px;line-height: 100px;left: 5px;top: 5px;}
+    .dermatolog-item span img{max-width: 80px;}
+    .money-back-badge{margin: auto 0px auto auto;}
+    .ready-for-img{padding-left: 40px;}
+    .ready-for-img:before{width: 200px;}
+    .footer-top-details{padding: 0px;}
+    .footer-left{justify-content: center;padding-bottom: 15px;}
+}
+
+/* Wide Mobile Layout: 767px. */
+
+@media (min-width: 100px) and (max-width: 767px) {
+    h2{font-size: 38px;line-height: 48px;}
+    .intro-img-area{margin-left: 134px;}
+    .intro-img-area:after{top: -256px;}
+    .intro-top-item h4{font-size: 16px;}
+    .intro-top-item p{font-size: 13px;line-height: 18px;}
+    .banner-txt h1 {font-size: 46px;line-height: 52px;}
+    .fuller-img-area{background-size: cover;}
+    .fuller-item span{width: 100px;height: 100px;line-height: 100px;}
+    .fuller-item span:before{width: 100px;height: 100px;left: 5px;top: 5px;}
+    .fuller-item span img{max-width: 44px;}
+    .intro-area{padding-top: 180px;}
+    .intro-badge-img{top: -140px;}
+    .intro-badge-img img{max-width: 140px;}
+    .enter-sha-details h2 br, .dev-spec-area h2 br{display: none;}
+    .backed-slider-item{margin-right: 20px;}
+    .stop-hair-img{max-width: 220px;}
+    .top-hair-item{width: 100%;}
+    .top-hair-single-item:last-child .top-hair-single-txt{padding-right: 60px;}
+    .dermatolog-details{flex-wrap: wrap;}
+    .dermatolog-item{width: 100%;margin: 15px 0px !important;flex-direction: row;}
+    .money-back-details{flex-direction: column-reverse;}
+    .money-back-badge{margin: 0px auto 20px;}
+    .ready-for-img{padding: 80px 0px 40px 60px;}
+    .ready-for-img img{max-width: 300px;}
+    .ready-for-txt-area{padding: 40px 0px 80px;}
+    .footer-right{justify-content: center;}
+    .footer-menu{padding-bottom: 10px;}
+    .footer-menu ul{flex-wrap: wrap;justify-content: center;}
+}
+
+@media (min-width: 100px) and (max-width: 640px) {
+    .page-content-block{padding: 60px 0px;}
+    .full-thick-details{height: 280px;}
+    .good-news-area{background-position: left -340px top;}
+    .enter-sha-item-img{margin-bottom: 20px;}
+    .enter-sha-area::before {width: 90%;}
+    .enter-sha-details{padding-right: 100px;}
+    .enter-sha-details p{font-size: 14px;}
+    .enter-sha-bottom-img{max-width: 160px;}
+    .backed-slider-item{padding: 25px 35px 20px 15px;}
+    .dev-spec-item.middle{width: 50%;}
+    .stop-hair-area{padding-bottom: 0px;}
+    .stop-hair-img-area{position: static;overflow: visible;display: flex;justify-content: center;}
+    .stop-hair-img{margin-bottom: -80px;}
+    
+}
+
+@media (min-width: 100px) and (max-width: 580px) {
+    .fuller-img-area{height: 540px;}
+    .fuller-item.item1{left: 180px;}
+    .fuller-item.item2{left: 15px;}
+    .fuller-item.item3{left: 244px;}
+    .intro-top-area{padding: 40px 0px;}
+    .intro-top-area:before{bottom: 46px;}
+    .intro-img-area:before{height: 480px;top: -60px;width: 200px;}
+    .intro-img-area img.intro-big{max-width: 220px;}
+    .intro-badge-img {top: -110px;}
+    .intro-badge-img img{max-width: 100px;}
+    .intro-area{padding-top: 130px;}
+    .intro-img-area::after {top: -171px;height: 250px;}
+    .full-thick-area h2{left: 130px;}
+    .full-thick-details{height: 240px;}
+    .full-thick-area::after {background-size: 140px;}
+    .enter-sha-area::before {width: 96%;}
+    .enter-sha-bottom-img {max-width: 120px;}
+    .ready-for-img img {max-width: 200px;}
+}
+
+@media (min-width: 100px) and (max-width: 480px) {
+    h2{font-size: 32px;line-height: 42px;}
+    p br{display: none;}
+    .banner-area, .page-content-block {padding: 40px 0px;}
+    .banner-txt h1 {font-size: 38px;line-height: 46px;}
+    .banner-badge-item {max-width: 120px;}
+    .fuller-img-area{background-position: right -120px top;height: 460px;}
+    .fuller-item span{width: 74px;height: 74px;line-height: 74px;margin-bottom: 15px;}
+    .fuller-item span:before{width: 74px;height: 74px;}
+    .fuller-item span img{max-width: 30px;}
+    .fuller-item.item1 {left: 120px;top: 20px;}
+    .fuller-item.item2 {top: 157px;}
+    .fuller-item.item3 {left: 180px;top: 227px;}
+    .fuller-item h6{font-size: 13px;}
+    .intro-img-area {margin-left: 123px;}
+    .backed-slider{margin-right: -200px;}
+    .backed-slider .slick-dots{margin-left: 160px;}
+    .stop-hair-img {max-width: 180px;}
+    .footer-left{flex-direction: column;}
+    .footer-left a{margin-right: 0px;margin-bottom: 5px;}
+
+}
+@media (min-width: 100px) and (max-width: 380px) {
+   .banner-badge-item {max-width: 100px;}
+    .fuller-item.item1 {left: 100px;}
+    .fuller-item.item3 {left: 130px;}
+    .intro-top-item h4 {font-size: 14px;}
+    .intro-img-area {margin-left: 90px;}
+    .intro-img-area::after {width: 44px;left: -57px;}
+    .intro-badge-img{left: -40px;}
+    .intro-img-area img.intro-big{max-width: 180px;}
+    .intro-img-area::before{width: 140px;height: 360px;}
+    .full-thick-details {height: 200px;}
+    .full-thick-area::after {background-size: 110px;}
+    .enter-sha-details {padding-right: 0px;}
+    .enter-sha-bottom-img {position: relative;margin-left: auto;margin-right: -15px;margin-bottom: -140px;bottom: 0px;}
+    .dev-spec-img{margin: 0 15px 0 0;max-width: 50px;}
+    .dev-spec-item.left::before{right: 24px;}
+    .dev-spec-item.right::before {left: 24px;}
+    .stop-hair-img {max-width: 170px;}
+    .dermatolog-item{flex-direction: column;}
+}
+@media (min-width: 100px) and (max-width: 320px) {
+   
+}
+
